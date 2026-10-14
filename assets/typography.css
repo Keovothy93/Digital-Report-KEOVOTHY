@@ -1,0 +1,18 @@
+/* Reference typography: Battambang Bold headings; Battambang text; oblique secondary copy.
+   Bundled fonts load locally, including offline. */
+@font-face{font-family:'Studio Battambang';src:url('./fonts/Battambang-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Studio Battambang';src:url('./fonts/Battambang-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+:root{--studio-font-body:'Studio Battambang','Battambang','Khmer OS Battambang','Noto Sans Khmer',sans-serif;--studio-font-heading:var(--studio-font-body);--default-font-family:var(--studio-font-body)}
+html,body,body :where(div,section,article,aside,header,footer,nav,main,p,a,span,small,strong,b,em,i,label,button,input,textarea,select,option,table,thead,tbody,tr,th,td,li,ol,ul,summary,details,code,pre,output){font-family:var(--studio-font-body)!important;letter-spacing:normal!important}
+body{line-height:1.9}
+body :where(h1,h2,h3,h4,h5,h6),body :where(h1,h2,h3,h4,h5,h6) *,.brand strong,.brand-product,[data-slot='dialog-title']{font-family:var(--studio-font-heading)!important;font-weight:700!important;font-style:normal!important;letter-spacing:normal!important;line-height:1.85!important}
+.shell .intro h1{font-size:25px}.shell h2,.manual-dialog h2{font-size:18px}.shell h3{font-size:16px}.shell h4{font-size:14px}.brand strong,.brand-product{font-size:16px!important}
+body :where(p,label,li,td,textarea){line-height:1.95}
+body :where(button,input,select){line-height:1.7}
+body .muted,body .method-note,body .summary-sources,body .evidence-row p,body .footer,body .input-divider,body .manual-change,body .workflow small{font-style:oblique 10deg!important;font-weight:400}
+.shell .eyebrow,.shell .overline,.shell .step,.shell .studio-version{line-height:1.7;letter-spacing:normal}
+.shell .score-strip strong{font-family:var(--studio-font-body)!important;font-weight:700;letter-spacing:normal!important;line-height:1.5}
+.shell .tabbar button{height:auto;min-height:60px;white-space:normal}.shell .toolbar button{height:auto;min-height:42px}.shell .tab-label{line-height:1.8}.shell .tab-label small{line-height:1.8}.shell .platform-heading h3{font-size:16px}
+.shell .score-table th,.shell .score-table td{line-height:1.95}.shell .score-table th{font-weight:700}.manual-dialog button,.shell .save-actions button{height:auto;min-height:42px}
+.export-paper,.export-paper *{font-family:var(--studio-font-body)!important;letter-spacing:normal!important}.export-paper :where(h1,h2,h3,h4){font-family:var(--studio-font-heading)!important;font-weight:700!important;line-height:1.85}
+@media(max-width:560px){.shell .intro h1{font-size:21px}.shell .brand strong,.shell .brand-product{font-size:13px!important}.shell h2{font-size:17px}.shell .empty h2{font-size:20px}.shell .tab-label{font-size:11px}.shell .tabbar button{min-height:62px}.shell .guide-heading h2{font-size:16px}}
